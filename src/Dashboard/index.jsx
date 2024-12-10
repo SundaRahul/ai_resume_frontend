@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useUser } from '@clerk/clerk-react'
 import GlobalApi from './../../service/GlobalApi';
-import ResumeCardItem from './components/ResumeCardItem';
+import ResumeCardItem from './Components/ResumeCardItem';
 import AddResume from './Components/AddResume';
 
 function Dashboard() {
