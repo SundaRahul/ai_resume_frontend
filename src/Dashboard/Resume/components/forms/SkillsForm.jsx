@@ -1,10 +1,10 @@
-import { Input } from '@/components/ui/input';
+import { Input } from './../../../../components/ui/input';
 import React, { useContext, useEffect, useState } from 'react';
 import { Rating } from '@smastrom/react-rating';
 import '@smastrom/react-rating/style.css';
-import { Button } from '@/components/ui/button';
+import { Button } from './../../../../components/ui/button';
 import { LoaderCircle } from 'lucide-react';
-import { ResumeInfoContext } from '@/context/ResumeInfoContext';
+import { ResumeInfoContext } from './../../../../Context/ResumeInfoContext';
 import GlobalApi from './../../../../../service/GlobalApi';
 import { useParams } from 'react-router-dom';
 import { toast } from 'sonner';

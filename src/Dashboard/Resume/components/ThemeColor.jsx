@@ -3,10 +3,10 @@ import {
     Popover,
     PopoverContent,
     PopoverTrigger,
-  } from "@/components/ui/popover"
-import { Button } from '@/components/ui/button'
+  } from "./../../../components/ui/popover"
+import { Button } from './../../../components/ui/button'
 import { LayoutGrid } from 'lucide-react'
-import { ResumeInfoContext } from '@/context/ResumeInfoContext'
+import { ResumeInfoContext } from './../../../Context/ResumeInfoContext'
 import GlobalApi from './../../../../service/GlobalApi'
 import { useParams } from 'react-router-dom'
 import { toast } from 'sonner'

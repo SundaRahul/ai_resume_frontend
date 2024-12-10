@@ -4,14 +4,14 @@ import ExperienceForm from './forms/ExperienceForm'
 import EducationForm from './forms/EducationForm'
 import SkillsForm from './forms/SkillsForm'
 import { ArrowLeft, ArrowRight, Home, LayoutGrid } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import { Button } from './../../../components/ui/button'
 import Summery from './forms/SummeryForms'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover"
+} from "./../../../components/ui/popover"
 import ThemeColor from './ThemeColor'
 
 

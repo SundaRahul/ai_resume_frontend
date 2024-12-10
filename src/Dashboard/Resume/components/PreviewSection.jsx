@@ -1,4 +1,4 @@
-import { ResumeInfoContext } from '@/Context/ResumeInfoContext'
+import { ResumeInfoContext } from './../../../Context/ResumeInfoContext'
 import React, { useContext } from 'react'
 import PersonalDetailsPreview from './preview/PersonalDetailsPreview'
 import Summary from './preview/Summary'

@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import FormSection from '../../components/FormSection'
 import PreviewSection from './../../components/PreviewSection'
-import { ResumeInfoContext } from '@/Context/ResumeInfoContext'
-import dummy from '@/data/dummy';
+import { ResumeInfoContext } from './../../../../Context/ResumeInfoContext'
+import dummy from './../../../../data/dummy';
 import { useEffect } from 'react';
 import GlobalApi from './../../../../../service/GlobalApi'
 
