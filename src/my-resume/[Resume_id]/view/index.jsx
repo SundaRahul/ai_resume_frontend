@@ -1,11 +1,11 @@
-import Header from '@/components/custom/Header'
+import Header from './../../../components/Custom/Header'
 import { Button } from '@/components/ui/button'
 import { ResumeInfoContext } from '@/context/ResumeInfoContext'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import GlobalApi from './../../../../service/GlobalApi'
 import { RWebShare } from 'react-web-share'
-import PreviewSection from '@/Dashboard/Resume/components/PreviewSection'
+import PreviewSection from './../../../Dashboard/Resume/components/PreviewSection'
 
 function ViewResume() {
 
