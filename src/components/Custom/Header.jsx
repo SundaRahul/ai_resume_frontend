@@ -1,9 +1,9 @@
 import React from 'react'
 import { Button } from '../ui/button'
 import { Link } from 'react-router-dom'
-import SignInPage from '@/auth/sign-in'
+import SignInPage from './../../auth/sign-in'
 import { UserButton, useUser } from '@clerk/clerk-react'
-import Dashboard from '@/Dashboard'
+import Dashboard from './../../Dashboard'
 
 function Header() {
   const {user,isSignedIn} =useUser();
