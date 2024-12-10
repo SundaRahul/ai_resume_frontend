@@ -8,7 +8,7 @@ import Home from './Home'
 import Dashboard from './Dashboard'
 import {ClerkProvider} from '@clerk/clerk-react'
 import EditResume from './Dashboard/Resume/[Resume_id]/edit'
-import ViewResume from './my-resume/[Resume_id]/view/index.jsx'
+import ViewResume from './my-resume/[Resume_id]/view'
 
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
