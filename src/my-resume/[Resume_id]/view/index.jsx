@@ -9,7 +9,7 @@ import PreviewSection from './../../../Dashboard/Resume/components/PreviewSectio
 
 function ViewResume() {
 
-    const [resumeInfo,setResumeInfo]=useState([]);
+    const [resumeInfo,setResumeInfo]=useState(null);
     const { Resume_id } = useParams();
 
     useEffect(()=>{
