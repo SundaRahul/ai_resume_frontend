@@ -1,5 +1,5 @@
 import Header from './../../../components/Custom/Header'
-import Button  from './../../../components/ui/button'
+import {Button}  from './../../../components/ui/button'
 import  {ResumeInfoContext} from './../../../Context/ResumeInfoContext'
 import React, { useEffect, useState } from 'react'
 import {useParams}  from 'react-router-dom'
