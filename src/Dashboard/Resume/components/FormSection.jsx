@@ -19,7 +19,6 @@ export default function FormSection() {
     const [activeFormIndex,setActiveFormIndex]=useState(1);
     const [enableNext,setEnableNext]=useState(false)
     const {Resume_id}=useParams();
-    const id=Resume_id;
     console.log("this is" +id);
   return (
     <div>
@@ -47,7 +46,7 @@ export default function FormSection() {
         :activeFormIndex===4?<EducationForm enableNext={(v)=>setEnableNext(v)}/>
         :activeFormIndex===5?<SkillsForm enableNext={(v)=>setEnableNext(v)} />
         // :activeFormIndex===6?<ViewForm/>
-        :activeFormIndex===6?<Navigate to={'/my-resume/'+id+"/view"}/>
+        :activeFormIndex===6?<Navigate to={'/my-resume/'+Resume_id+"/view"}/>
         :null}
         
         {/* summary  */}
