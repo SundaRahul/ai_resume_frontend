@@ -46,7 +46,7 @@ export default function FormSection() {
         :activeFormIndex===4?<EducationForm enableNext={(v)=>setEnableNext(v)}/>
         :activeFormIndex===5?<SkillsForm enableNext={(v)=>setEnableNext(v)} />
         // :activeFormIndex===6?<ViewForm/>
-        :activeFormIndex===6?<Navigate to={'/my-resume/'+Resume_id+"/view"}/>
+        :activeFormIndex===6?<Navigate to={`/my-resume/${Resume_id}/view`} />
         :null}
         
         {/* summary  */}
