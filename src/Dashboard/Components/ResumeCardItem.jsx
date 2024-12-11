@@ -55,7 +55,7 @@ function ResumeCardItem({resume,refreshData}) {
           rounded-t-lg border-t-4
         '
         style={{
-          borderColor:resume?.themeColor
+          borderColor:resume?.themeColor?resume.themeColor:"#37CA6D"
         }}
         >
               <div className='flex 
@@ -67,7 +67,7 @@ function ResumeCardItem({resume,refreshData}) {
         </Link>
         <div className='border p-3 flex justify-between  text-white rounded-b-lg shadow-lg'
          style={{
-          background:resume?.themeColor
+          background:resume?.themeColor?resume.themeColor:"#37CA6D"
         }}>
           <h2 className='text-sm'>{resume.title}</h2>
          
