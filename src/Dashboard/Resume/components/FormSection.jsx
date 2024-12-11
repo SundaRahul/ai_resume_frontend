@@ -19,7 +19,7 @@ export default function FormSection() {
     const [activeFormIndex,setActiveFormIndex]=useState(1);
     const [enableNext,setEnableNext]=useState(false)
     const {Resume_id}=useParams();
-    console.log("this is" +id);
+    console.log("this is" +Resume_id);
   return (
     <div>
 
