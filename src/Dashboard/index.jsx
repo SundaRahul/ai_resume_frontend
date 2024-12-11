@@ -3,6 +3,7 @@ import { useUser } from '@clerk/clerk-react'
 import GlobalApi from './../../service/GlobalApi';
 import ResumeCardItem from './Components/ResumeCardItem';
 import AddResume from './Components/AddResume';
+import { useParams } from 'react-router-dom';
 
 function Dashboard() {
 
@@ -11,6 +12,8 @@ function Dashboard() {
   useEffect(()=>{
     user&&GetResumesList()
   },[user])
+
+  const {Resume_id}=useParams();
 
   /**
    * Used to Get Users Resume List
@@ -27,21 +30,26 @@ function Dashboard() {
       <h2 className='font-bold text-3xl'>My Resume</h2>
       <p>Start Creating AI resume to your next Job role</p>
       <div className='grid grid-cols-2 
-      md:grid-cols-3 lg:grid-cols-5 gap-5
-      mt-10
-      '>
-        <AddResume/>
-        {resumeList.length>0?resumeList.map((resume,index)=>(
-          <ResumeCardItem resume={resume} key={index} refreshData={GetResumesList} />
-        )):
-        [1,2,3,4].map((item,index)=>(
-          <div className='h-[280px] rounded-lg bg-slate-200 animate-pulse'>
-          </div>
-        ))
-        }
+        md:grid-cols-3 lg:grid-cols-5 gap-5
+        mt-10
+        '>
+        <AddResume />
+        {resumeList.length > 0 ? resumeList.map((resume) => (
+          <ResumeCardItem
+            resume={resume}
+            key={resume.documentId} // Use a unique identifier
+            refreshData={GetResumesList}
+          />
+        )) : [1, 2, 3, 4].map((item) => (
+          <div
+            key={item} // Add a key to placeholders
+            className='h-[280px] rounded-lg bg-slate-200 animate-pulse'
+          ></div>
+        ))}
       </div>
     </div>
-  )
+  );
+
 }
 
 export default Dashboard
